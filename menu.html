@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor — Restaurant &amp; Café | Menu</title>
+  <meta name="description" content="The Sabor menu: starters, mains, desserts and drinks made with seasonal, local ingredients.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">✦</span>
+        <span>Sabor<small>Restaurant &amp; Café</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">☾</button>
+        <a class="btn btn-primary" href="reservation.html">Book a Table</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Page banner ================= -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> · Menu</div>
+      <h1>Our Menu</h1>
+      <p>Everything is made from scratch each morning. Pick a category — the kitchen does the rest.</p>
+    </div>
+  </section>
+
+  <!-- ================= Menu tabs ================= -->
+  <section class="section">
+    <div class="container">
+      <!-- Tabs: each button's data-target must match a panel id below -->
+      <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" type="button" data-target="panel-starters">Starters</button>
+        <button class="menu-tab" type="button" data-target="panel-mains">Mains</button>
+        <button class="menu-tab" type="button" data-target="panel-desserts">Desserts</button>
+        <button class="menu-tab" type="button" data-target="panel-drinks">Drinks</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-panel active" id="panel-starters">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Roasted Tomato Soup</h3><span class="dots"></span><span class="price">$9</span></div>
+            <p>Slow-roasted tomatoes, basil oil and grilled sourdough.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Burrata &amp; Heirloom Salad</h3><span class="dots"></span><span class="price">$13</span></div>
+            <p>Creamy burrata, heirloom tomatoes, basil and aged balsamic.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Crispy Calamari</h3><span class="dots"></span><span class="price">$12</span></div>
+            <p>Golden calamari, smoked paprika aioli and lemon.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Beef Carpaccio</h3><span class="dots"></span><span class="price">$15</span></div>
+            <p>Thin-sliced fillet, rocket, parmesan and truffle oil.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Garlic Butter Prawns</h3><span class="dots"></span><span class="price">$14</span></div>
+            <p>Tiger prawns sizzled in garlic butter and parsley.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Seasonal Bruschetta Trio</h3><span class="dots"></span><span class="price">$10</span></div>
+            <p>Tomato-basil, mushroom-ricotta and olive tapenade toasts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-panel" id="panel-mains">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Herb-Seared Salmon</h3><span class="dots"></span><span class="price">$24</span></div>
+            <p>Atlantic salmon, caper butter, charred lemon and dill.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Garden Tagliatelle</h3><span class="dots"></span><span class="price">$18</span></div>
+            <p>Hand-cut pasta, slow tomato sugo, basil and parmesan.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Grilled Ribeye Steak</h3><span class="dots"></span><span class="price">$29</span></div>
+            <p>28-day aged ribeye, rosemary potatoes and red wine jus.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Wild Mushroom Risotto</h3><span class="dots"></span><span class="price">$19</span></div>
+            <p>Carnaroli rice, porcini, thyme and pecorino cream.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Slow-Braised Lamb Shank</h3><span class="dots"></span><span class="price">$26</span></div>
+            <p>Six-hour lamb, root vegetables and mint gremolata.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Herb Chicken Supreme</h3><span class="dots"></span><span class="price">$21</span></div>
+            <p>Free-range chicken, garlic mash and seasonal greens.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-panel" id="panel-desserts">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Chocolate Fondant</h3><span class="dots"></span><span class="price">$11</span></div>
+            <p>Warm dark-chocolate fondant with vanilla bean ice cream.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Classic Tiramisu</h3><span class="dots"></span><span class="price">$10</span></div>
+            <p>Espresso-soaked ladyfingers, mascarpone and cocoa dust.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Lemon Tart</h3><span class="dots"></span><span class="price">$9</span></div>
+            <p>Torched lemon curd, shortcrust and Italian meringue.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Basque Cheesecake</h3><span class="dots"></span><span class="price">$10</span></div>
+            <p>Caramelised top, creamy centre, macerated berries.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Affogato Sabor</h3><span class="dots"></span><span class="price">$7</span></div>
+            <p>Vanilla gelato drowned in a double shot of our espresso.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Seasonal Fruit Crumble</h3><span class="dots"></span><span class="price">$8</span></div>
+            <p>Market fruit, oat crumble and warm custard.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-panel" id="panel-drinks">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Sabor House Espresso</h3><span class="dots"></span><span class="price">$4</span></div>
+            <p>Our own roast: single-origin beans, notes of cocoa and cherry.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Flat White / Latte / Cappuccino</h3><span class="dots"></span><span class="price">$5</span></div>
+            <p>Silky steamed milk over a double shot. Oat milk available.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Fresh Orange &amp; Ginger Juice</h3><span class="dots"></span><span class="price">$6</span></div>
+            <p>Pressed to order every morning, nothing added.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>House Red / White (glass)</h3><span class="dots"></span><span class="price">$8</span></div>
+            <p>Rotating regional wines chosen by our sommelier.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Sabor Spritz</h3><span class="dots"></span><span class="price">$11</span></div>
+            <p>Our signature aperitif with citrus, herbs and sparkling wine.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Artisan Herbal Teas</h3><span class="dots"></span><span class="price">$5</span></div>
+            <p>Chamomile, mint, hibiscus or ginger — brewed in a pot for one.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu-note">Prices include taxes. Please tell us about allergies — most dishes can be adapted. A discretionary 10% service charge is shared with the whole team.</p>
+    </div>
+  </section>
+
+  <!-- ================= CTA band ================= -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Seen something you like?</h2>
+      <p>Reserve your table now and we will have the bread warm when you arrive.</p>
+      <a class="btn" href="reservation.html">Book a Table</a>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo-mark">✦</span>
+            <span>Sabor<small>Restaurant &amp; Café</small></span>
+          </a>
+          <p>Seasonal cooking, honest coffee and a dining room built for long conversations — in the heart of the neighbourhood since 2013.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>Mon – Fri: 9:00 – 23:00</li>
+            <li>Saturday: 10:00 – 24:00</li>
+            <li>Sunday: 10:00 – 24:00</li>
+            <li>Kitchen closes 30 min earlier</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>123 Olive Street, Old Town<br>
+          Phone: +1 (555) 123-4567<br>
+          Email: hello@sabor.example</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Sabor Restaurant &amp; Café. All rights reserved.</span>
+        <span>Crafted with seasonal ingredients.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

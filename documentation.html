@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabor — Restaurant &amp; Café Template · Documentation</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, Arial, sans-serif; line-height: 1.65; color: #2b2118; background: #faf6ef; margin: 0; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.2rem 4rem; }
+  h1 { font-family: Georgia, serif; font-size: 2.2rem; margin-bottom: 0.2rem; }
+  h2 { font-family: Georgia, serif; margin-top: 2.4rem; border-bottom: 2px solid #e4d8c6; padding-bottom: 0.4rem; }
+  h3 { margin-top: 1.4rem; }
+  code { background: #f1e8da; padding: 0.1rem 0.4rem; border-radius: 5px; font-size: 0.92em; }
+  pre { background: #241e19; color: #f2e9dc; padding: 1rem 1.2rem; border-radius: 10px; overflow-x: auto; font-size: 0.88rem; }
+  .muted { color: #6f6154; }
+  .note { background: #fdf3e3; border: 1px solid #ecd9ae; border-radius: 10px; padding: 0.9rem 1.1rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #e4d8c6; padding: 0.55rem 0.8rem; text-align: left; font-size: 0.95rem; }
+  th { background: #f1e8da; }
+  ul li { margin-bottom: 0.35rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Sabor — Restaurant &amp; Café HTML Template</h1>
+  <p class="muted">Documentation · Version 1.0 · Pure HTML5 / CSS3 / Vanilla JavaScript — no frameworks, no build step, no external dependencies.</p>
+
+  <h2>1. What's included</h2>
+  <pre>sabor-html-template/
+├── index.html          Home (hero, featured dishes, testimonials)
+├── menu.html           Menu with category tabs
+├── about.html          Story, values, team
+├── gallery.html        Photo gallery with lightbox
+├── reservation.html    Reservation form + contact info
+├── documentation.html  This guide
+├── css/
+│   ├── style.css       Main stylesheet (themes, layout, components)
+│   └── responsive.css  Tablet &amp; mobile breakpoints
+├── js/
+│   ├── main.js         Theme toggle, mobile nav, animations, slider
+│   ├── menu.js         Menu category tabs
+│   ├── gallery.js      Gallery lightbox
+│   └── form.js         Reservation form validation
+└── assets/img/         Demo photos (replace with your own)</pre>
+
+  <h2>2. Installation</h2>
+  <ol>
+    <li>Unzip the package.</li>
+    <li>Upload the whole <code>sabor-html-template</code> folder to your web host (or open <code>index.html</code> locally in a browser — everything works without a server).</li>
+    <li>Done. There is no build step and nothing to compile.</li>
+  </ol>
+  <p class="note"><strong>Note:</strong> The reservation form validates on the client side and shows a confirmation message, but it does not send email by itself. Connect it to your booking system or a form service by pointing the form's submit handler (see <code>js/form.js</code>) to your endpoint.</p>
+
+  <h2>3. Customising</h2>
+
+  <h3>3.1 Colours &amp; dark mode</h3>
+  <p>All colours live in CSS variables at the top of <code>css/style.css</code>. Change <code>--accent</code> (terracotta) and <code>--gold</code> to rebrand the whole site. Dark-mode values are in the <code>[data-theme="dark"]</code> block right below. The toggle button in the header switches themes and remembers the visitor's choice in <code>localStorage</code>.</p>
+
+  <h3>3.2 Text &amp; content</h3>
+  <p>Every text is plain HTML — edit it directly in the page files. The header, footer and navigation are repeated in each page (standard for static templates), so update them in all five files when you change links or contact details.</p>
+
+  <h3>3.3 Images</h3>
+  <p>Demo photos are in <code>assets/img/</code>. Replace them with your own photos using the same file names to avoid touching any HTML:</p>
+  <table>
+    <tr><th>File</th><th>Used for</th></tr>
+    <tr><td><code>hero-dish.jpg</code></td><td>Home hero background + salmon dish card + gallery</td></tr>
+    <tr><td><code>dish-pasta.jpg</code></td><td>Pasta dish card + gallery</td></tr>
+    <tr><td><code>dish-dessert.jpg</code></td><td>Dessert dish card + gallery</td></tr>
+    <tr><td><code>interior.jpg</code></td><td>Home &amp; About story sections + gallery</td></tr>
+  </table>
+  <p>The gallery also includes CSS “art tiles” — gradient placeholders with an icon and text. Replace a tile with a photo by swapping the <code>.art-tile</code> block for an <code>&lt;img&gt;</code> tag (example in the gallery page comments).</p>
+
+  <h3>3.4 Menu items</h3>
+  <p>Menu categories are panels in <code>menu.html</code>. Each tab button has a <code>data-target</code> matching a panel <code>id</code> (<code>panel-starters</code>, <code>panel-mains</code>, <code>panel-desserts</code>, <code>panel-drinks</code>). To add a category: copy a button, change its label and <code>data-target</code>, then copy a panel with the matching <code>id</code> and edit the dishes.</p>
+
+  <h3>3.5 Testimonials</h3>
+  <p>Add or remove <code>.testimonial-slide</code> blocks in <code>index.html</code> — the slider dots and auto-rotation adjust automatically.</p>
+
+  <h3>3.6 Reservation form rules</h3>
+  <p>Validation lives in <code>js/form.js</code>: required fields, email format, phone (7+ digits), no past dates, and 1–20 guests. Edit those rules in one place if your restaurant differs.</p>
+
+  <h2>4. Browser support</h2>
+  <p>Current versions of Chrome, Firefox, Safari and Edge. Uses CSS variables, flexbox, grid and <code>IntersectionObserver</code> — with graceful fallbacks (content stays visible if an API is missing).</p>
+
+  <h2>5. Credits</h2>
+  <ul>
+    <li>Demo photos: AI-generated for this template; free to use in your project.</li>
+    <li>Icons: Unicode symbols/emoji rendered by the visitor's system — no icon fonts or external assets.</li>
+    <li>Fonts: system font stacks only (Georgia + system sans), so the template works fully offline.</li>
+  </ul>
+
+  <h2>6. Support</h2>
+  <p>Questions about this template? Contact the author through the marketplace where you purchased it. Please include the page name and a screenshot of the issue.</p>
+
+</div>
+</body>
+</html>
